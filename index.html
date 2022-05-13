@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navside">
+        <h2 id="event-name">Slaca 2019</h2>
+        <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()"
+            class="close-menu"
+            >
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30 10L10 30M10 10L30 30"
+                stroke="#FFF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+        </button>
+        <img src="assets/images/menu-logo.png" alt="laranja cortada ao meio, um lado com textura do mapa da terra e outro com poligonos">
+        <nav>
+            <ul>
+                <li><a class="menu-option" href="#apresentation">Apresentação</a></li>
+                <li><a class="menu-option" href="">Comitês</a></li>
+                <li><a class="menu-option" href="">Autores</a></li>
+                <li><a class="menu-option" href="">Eixos Temáticos</a></li>
+                <li><a class="menu-option" href="">Trabalhos</a></li>
+                <li><a class="menu-option" href="#contact">Contato</a></li>
+            </ul>
+            
+        </nav>
+    </div>
+    <div class="content">
+        <header>            
+            <div class="title">
+                <h4>Anais do Simpósio Latino Americano de Ciências de Alimentos</h4>
+                <h3>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h3>
+                <h4>ISSN: 1234-5678</h4>
+            </div>
+            
+
+            <button class="language-button">
+                <img src="assets/images/language-image.png" alt="">
+                PT-BR
+                <img src="assets/images/dropdown.png" alt="">
+            </button>
+
+            <div class="perfil">
+                <button
+                    aria-expanded="false"
+                    aria-label="Abrir menu"
+                    onclick="openMenu()"
+                    class="open-menu"
+                >
+                    <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        d="M10 20H30"
+                        stroke="#C5C5C5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M10 12H30"
+                        stroke="#C5C5C5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M10 28L30 28"
+                        stroke="#C5C5C5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    </svg>
+                </button>
+                <div id="header-user">
+                    <div class="message">
+                        <h4>Bem Vindo!</h4>
+                        <p>alguem12@galoascience.com</p>
+                    </div>
+                    <img src="assets/images/perfil-image.png" alt="">
+                </div>
+            </div>
+            
+        </header>
+        <main>
+            <div class="container">
+                <div class="about-work">
+                    <h1>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h1>
+                    <div class="cite">
+                        <div class="links">
+                        <a href="#">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.75 0H9.25C9.45833 0 9.63542 0.0729167 9.78125 0.21875C9.92708 0.364583 10 0.541667 10 0.75V6H12.75C13.0208 6 13.2083 6.13542 13.3125 6.40625C13.4167 6.65625 13.375 6.875 13.1875 7.0625L8.4375 11.8125C8.3125 11.9375 8.16667 12 8 12C7.83333 12 7.6875 11.9375 7.5625 11.8125L2.8125 7.0625C2.625 6.875 2.58333 6.65625 2.6875 6.40625C2.79167 6.13542 2.97917 6 3.25 6H6V0.75C6 0.541667 6.07292 0.364583 6.21875 0.21875C6.36458 0.0729167 6.54167 0 6.75 0ZM16 11.75V15.25C16 15.4583 15.9271 15.6354 15.7812 15.7812C15.6354 15.9271 15.4583 16 15.25 16H0.75C0.541667 16 0.364583 15.9271 0.21875 15.7812C0.0729167 15.6354 0 15.4583 0 15.25V11.75C0 11.5417 0.0729167 11.3646 0.21875 11.2188C0.364583 11.0729 0.541667 11 0.75 11H5.34375L6.875 12.5312C7.1875 12.8438 7.5625 13 8 13C8.4375 13 8.8125 12.8438 9.125 12.5312L10.6562 11H15.25C15.4583 11 15.6354 11.0729 15.7812 11.2188C15.9271 11.3646 16 11.5417 16 11.75ZM11.9375 14.9375C12.0625 14.8125 12.125 14.6667 12.125 14.5C12.125 14.3333 12.0625 14.1875 11.9375 14.0625C11.8125 13.9375 11.6667 13.875 11.5 13.875C11.3333 13.875 11.1875 13.9375 11.0625 14.0625C10.9375 14.1875 10.875 14.3333 10.875 14.5C10.875 14.6667 10.9375 14.8125 11.0625 14.9375C11.1875 15.0625 11.3333 15.125 11.5 15.125C11.6667 15.125 11.8125 15.0625 11.9375 14.9375ZM13.9375 14.9375C14.0625 14.8125 14.125 14.6667 14.125 14.5C14.125 14.3333 14.0625 14.1875 13.9375 14.0625C13.8125 13.9375 13.6667 13.875 13.5 13.875C13.3333 13.875 13.1875 13.9375 13.0625 14.0625C12.9375 14.1875 12.875 14.3333 12.875 14.5C12.875 14.6667 12.9375 14.8125 13.0625 14.9375C13.1875 15.0625 13.3333 15.125 13.5 15.125C13.6667 15.125 13.8125 15.0625 13.9375 14.9375Z" fill="white"/>
+                                </svg>                                
+                            Download</a>
+                            <button><img src="assets/images/favorite.png" alt=""></button>
+                            <button><img src="assets/images/doi.png" alt=""></button>
+                        </div>
+                        <h3>Como citar este trabalho?</h3>
+                    </div>
+                    
+                </div>
+                <div class="video-section" id="apresentation">
+                    <img src="assets/images/video-apresentacao.png" alt="">
+                    <div class="details">
+                        <h2>Detalhes</h2>
+                        <div class="info">
+                            <p>Tipo de Apresentação: <strong>Pôster</strong> <br>
+                            Eixo temático: <strong>Alimentação e saúde (AS)</strong> <br>
+                            Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></p>
+                            <h3>Autores:</h3>
+                            <ul>
+                                <li>Galileo Galilei¹</li>
+                                <li>Berta Lange de Morretes²</li>
+                                <li>Isaac Newton³</li>
+                                <li>Cesar Lattes¹</li>
+                                <li>Stephen Hawking⁴</li>
+                            </ul> 
+                            <p>
+                                ¹Universidade Estadual de Campinas <br>
+                                ²Universidade de São Paulo <br>
+                                ³Instituto Nacional de Pesquisas Espaciais <br>
+                                ⁴Universidade Federal do Rio de Janeiro <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <section class="resume">
+                    <h2>Resumo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus egestas u et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant<span id="dots">... <button id="seeMore">ver mais</button></span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rerum itaque odit voluptates porro neque provident accusantium, commodi omnis labore, consectetur laborum! Nihil ea asperiores explicabo corporis dicta aut nostrum?</span></p>
+                </section>
+
+                <section class="discussion">
+                    <h2>Discussões</h2>
+                    <div class="create-topic">
+                        <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
+                        <div class="icons">
+                            <img src="assets/images/icone1.png" alt="">
+                            <img src="assets/images/icone2.png" alt="">
+                            <img src="assets/images/icone3.png" alt="">
+                        </div>
+                        <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                        <button id="create-topic-btn">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="7" width="3" height="17" rx="1" fill="white"/>
+                            <rect y="10" width="3" height="17" rx="1" transform="rotate(-90 0 10)" fill="white"/>
+                            </svg>
+                            criar tópico</button>
+                    </div>
+                    <div class="send-topic">
+                        <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                        <form action="" method="post">
+                            <label for="assunto">Assunto</label>
+                            <input required type="text" name="assunto" id="assunto" placeholder="Defina um tópico sucinto para notificar os autores...">
+                            <label for="textarea1">Conteúdo</label>
+                            <div class="textarea">
+                                <textarea id="textarea1" 
+                                class="input" 
+                                name="name">
+                                </textarea>
+                                <div class="textarea-options">
+                                    <div class="format-options">
+                                        <button type="button" 
+                                        id="bold"
+                                        onclick="f1()"  
+                                        title="Bold Text">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.23417 10H0.832764V0H7.0006C8.32208 0.00844415 9.5837 0.313975 10.5087 0.849572C11.4337 1.38517 11.9466 2.1071 11.9349 2.857C11.9349 3.52706 11.5251 4.17634 10.7753 4.694C11.7015 5.01926 12.4178 5.50561 12.8174 6.08061C13.217 6.65561 13.2786 7.28848 12.9929 7.88494C12.7073 8.4814 12.0897 9.00953 11.2322 9.39066C10.3747 9.77179 9.3231 9.98551 8.23417 10ZM4.53347 5.714V8.572H7.59976C8.20185 8.53245 8.75278 8.36081 9.13478 8.09377C9.51678 7.82673 9.69953 7.48549 9.64396 7.143C9.6995 6.80035 9.51651 6.45898 9.13415 6.19191C8.75178 5.92485 8.20041 5.75331 7.598 5.714H4.53347ZM4.53347 1.428V4.286H6.48955C7.07884 4.23866 7.61253 4.06303 7.97763 3.79631C8.34273 3.52959 8.51058 3.19272 8.44564 2.857C8.51058 2.52128 8.34273 2.18441 7.97763 1.91769C7.61253 1.65097 7.07884 1.47534 6.48955 1.428H4.53347Z" fill="#474747"/>
+                                            </svg>
+                                            </button>
+                                        <button type="button" 
+                                        onclick="f2()"  
+                                        title="Italic Text">
+                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.4339 0V0.714H12.8637L6.43813 9.286H9.00835V10H0.0125732V9.286H2.58279L9.00835 0.714H6.43813V0H15.4339Z" fill="#474747"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                        <button type="button" id="send-topic-btn">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="created-topic">
+                        <h3>Seu tópico foi enviado com sucesso! :D</h3>                        
+                        <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+
+                        <a href="">Descubra outros trabalhos!</a>
+
+                        <button id="created-topic-btn">criar novo tópico</button>
+                    </div>
+                    <div class="topics">
+                        <div class="topic">
+                            <h3 class="assunto">Assunto da pergunta aparece aqui</h3>
+                            <h4 class="user">Carlos Henrique Santos</h4>
+                            <p class="comment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            <div class="options">
+                                <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="16" r="2" fill="#ED7839"/>
+                                    <circle cx="2" cy="9" r="2" fill="#ED7839"/>
+                                    <circle cx="2" cy="2" r="2" fill="#ED7839"/>
+                                </svg>
+                                <img src="assets/images/gostar.png" alt="">
+                                <div class="likes">1 like</div>
+                                <div class="respostas">1 resposta</div> 
+                            </div>
+                            <div class="resposta-comments">
+                                <div class="resposta-autor">
+                                    <h4 class="user">Carlos Henrique Santos</h4>
+                                    <p class="comment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                                    <div class="autor-marker">
+                                        <h3>Autor</h3>
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.6603 7.33594C20.8426 7.51823 20.9337 7.73958 20.9337 8C20.9337 8.26042 20.8426 8.48177 20.6603 8.66406L9.09778 20.2266C8.91549 20.4089 8.69413 20.5 8.43372 20.5C8.1733 20.5 7.95194 20.4089 7.76965 20.2266L1.20715 13.6641C1.02486 13.4818 0.933716 13.2604 0.933716 13C0.933716 12.7396 1.02486 12.5182 1.20715 12.3359L2.76965 10.7734C2.95194 10.5911 3.1733 10.5 3.43372 10.5C3.69413 10.5 3.91549 10.5911 4.09778 10.7734L8.43372 15.1484L17.8087 5.77344C17.965 5.59115 18.1733 5.5 18.4337 5.5C18.6941 5.5 18.9155 5.59115 19.0978 5.77344L20.6603 7.33594ZM8.00403 11.4766L3.62903 7.10156C3.31653 6.78906 3.31653 6.48958 3.62903 6.20312L5.38684 4.44531C5.51705 4.3151 5.66028 4.25 5.81653 4.25C5.99882 4.25 6.15507 4.3151 6.28528 4.44531L8.43372 6.59375L14.3712 0.695312C14.4754 0.565104 14.6056 0.5 14.7618 0.5C14.9441 0.5 15.1004 0.565104 15.2306 0.695312L16.9884 2.45312C17.3009 2.73958 17.3009 3.03906 16.9884 3.35156L8.8634 11.4766C8.75924 11.6068 8.61601 11.6719 8.43372 11.6719C8.25142 11.6719 8.10819 11.6068 8.00403 11.4766Z" fill="#ED7839"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topic">
+                            <h3 class="assunto">Assunto da pergunta aparece aqui</h3>
+                            <h4 class="user">Carlos Henrique Santos</h4>
+                            <p class="comment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            <div class="options">
+                                <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="16" r="2" fill="#ED7839"/>
+                                    <circle cx="2" cy="9" r="2" fill="#ED7839"/>
+                                    <circle cx="2" cy="2" r="2" fill="#ED7839"/>
+                                </svg>
+                                <img src="assets/images/gostar.png" alt="">
+                                <div class="likes">1 like</div>
+                                <div class="respostas">4 resposta</div> 
+                                
+                            </div>
+                            <div class="resposta-comments">
+                                <div class="resposta-autor">
+                                    <h4 class="user">Adriano da Silva</h4>
+                                    <p class="comment">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                                    <div class="autor-marker">
+                                        <h3>Autor</h3>
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.6603 7.33594C20.8426 7.51823 20.9337 7.73958 20.9337 8C20.9337 8.26042 20.8426 8.48177 20.6603 8.66406L9.09778 20.2266C8.91549 20.4089 8.69413 20.5 8.43372 20.5C8.1733 20.5 7.95194 20.4089 7.76965 20.2266L1.20715 13.6641C1.02486 13.4818 0.933716 13.2604 0.933716 13C0.933716 12.7396 1.02486 12.5182 1.20715 12.3359L2.76965 10.7734C2.95194 10.5911 3.1733 10.5 3.43372 10.5C3.69413 10.5 3.91549 10.5911 4.09778 10.7734L8.43372 15.1484L17.8087 5.77344C17.965 5.59115 18.1733 5.5 18.4337 5.5C18.6941 5.5 18.9155 5.59115 19.0978 5.77344L20.6603 7.33594ZM8.00403 11.4766L3.62903 7.10156C3.31653 6.78906 3.31653 6.48958 3.62903 6.20312L5.38684 4.44531C5.51705 4.3151 5.66028 4.25 5.81653 4.25C5.99882 4.25 6.15507 4.3151 6.28528 4.44531L8.43372 6.59375L14.3712 0.695312C14.4754 0.565104 14.6056 0.5 14.7618 0.5C14.9441 0.5 15.1004 0.565104 15.2306 0.695312L16.9884 2.45312C17.3009 2.73958 17.3009 3.03906 16.9884 3.35156L8.8634 11.4766C8.75924 11.6068 8.61601 11.6719 8.43372 11.6719C8.25142 11.6719 8.10819 11.6068 8.00403 11.4766Z" fill="#ED7839"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="resposta-user">
+                                    <h4 class="user">Carlos Henrique Santos</h4>
+                                    <p class="comment">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+                                    </p><p>Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                                </div>
+                                <div class="resposta-coautor">
+                                    <h4 class="user">Carmila Ferreira Andrade</h4>
+                                    <p class="comment">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                    </p><p>
+                                    Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                    </p>
+                                    <div class="autor-marker">
+                                        <h3>Coautor</h3>
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.6603 7.33594C20.8426 7.51823 20.9337 7.73958 20.9337 8C20.9337 8.26042 20.8426 8.48177 20.6603 8.66406L9.09778 20.2266C8.91549 20.4089 8.69413 20.5 8.43372 20.5C8.1733 20.5 7.95194 20.4089 7.76965 20.2266L1.20715 13.6641C1.02486 13.4818 0.933716 13.2604 0.933716 13C0.933716 12.7396 1.02486 12.5182 1.20715 12.3359L2.76965 10.7734C2.95194 10.5911 3.1733 10.5 3.43372 10.5C3.69413 10.5 3.91549 10.5911 4.09778 10.7734L8.43372 15.1484L17.8087 5.77344C17.965 5.59115 18.1733 5.5 18.4337 5.5C18.6941 5.5 18.9155 5.59115 19.0978 5.77344L20.6603 7.33594ZM8.00403 11.4766L3.62903 7.10156C3.31653 6.78906 3.31653 6.48958 3.62903 6.20312L5.38684 4.44531C5.51705 4.3151 5.66028 4.25 5.81653 4.25C5.99882 4.25 6.15507 4.3151 6.28528 4.44531L8.43372 6.59375L14.3712 0.695312C14.4754 0.565104 14.6056 0.5 14.7618 0.5C14.9441 0.5 15.1004 0.565104 15.2306 0.695312L16.9884 2.45312C17.3009 2.73958 17.3009 3.03906 16.9884 3.35156L8.8634 11.4766C8.75924 11.6068 8.61601 11.6719 8.43372 11.6719C8.25142 11.6719 8.10819 11.6068 8.00403 11.4766Z" fill="#ED7839"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="resposta-coautor">
+                                    <h4 class="user">Ana Carolina</h4>
+                                    <p class="comment">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                                    <div class="autor-marker">
+                                        <h3>Coautor</h3>
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.6603 7.33594C20.8426 7.51823 20.9337 7.73958 20.9337 8C20.9337 8.26042 20.8426 8.48177 20.6603 8.66406L9.09778 20.2266C8.91549 20.4089 8.69413 20.5 8.43372 20.5C8.1733 20.5 7.95194 20.4089 7.76965 20.2266L1.20715 13.6641C1.02486 13.4818 0.933716 13.2604 0.933716 13C0.933716 12.7396 1.02486 12.5182 1.20715 12.3359L2.76965 10.7734C2.95194 10.5911 3.1733 10.5 3.43372 10.5C3.69413 10.5 3.91549 10.5911 4.09778 10.7734L8.43372 15.1484L17.8087 5.77344C17.965 5.59115 18.1733 5.5 18.4337 5.5C18.6941 5.5 18.9155 5.59115 19.0978 5.77344L20.6603 7.33594ZM8.00403 11.4766L3.62903 7.10156C3.31653 6.78906 3.31653 6.48958 3.62903 6.20312L5.38684 4.44531C5.51705 4.3151 5.66028 4.25 5.81653 4.25C5.99882 4.25 6.15507 4.3151 6.28528 4.44531L8.43372 6.59375L14.3712 0.695312C14.4754 0.565104 14.6056 0.5 14.7618 0.5C14.9441 0.5 15.1004 0.565104 15.2306 0.695312L16.9884 2.45312C17.3009 2.73958 17.3009 3.03906 16.9884 3.35156L8.8634 11.4766C8.75924 11.6068 8.61601 11.6719 8.43372 11.6719C8.25142 11.6719 8.10819 11.6068 8.00403 11.4766Z" fill="#ED7839"/>
+                                        </svg>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="contact">
+            <img src="assets/images/imagem-footer.png" alt="">
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="texteditor.js"></script>
+    <script src="sendcomment.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
