@@ -24,6 +24,8 @@ body {
   font-size: 1.6rem;
 }
 
+/*=== MENU LATERAL =================================*/
+
 .navside{
   height: 100%;
   width: var(--nav-width);
@@ -91,10 +93,13 @@ body {
   display: none;
 }
 
+/*=== MAIN CONTENT =================================*/
+
 .content{
   margin-left: var(--nav-width);
 }
 
+/*=== HEADER =================================*/
 
 header{
   display: flex;
@@ -102,8 +107,7 @@ header{
 
   background: #FDF1EB;
 
-  padding-block: .5rem;
-  padding-inline: 3.6rem;
+  padding: .5rem 3,6rem;
   width: 100%;
   margin-bottom: 2rem;
 
@@ -116,15 +120,12 @@ header .title{
 }
 
 header .title h4{
-  font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.6rem;
-
 }
 
 header .title h3{
-  font-style: normal;
   font-weight: 400;
   font-size: 2.2rem;
   line-height: 2.5rem;
@@ -157,7 +158,6 @@ header button{
 }
 
 #header-user h4{
-  font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.8rem;
@@ -169,7 +169,6 @@ header button{
   line-height: 1.5rem;
 }
 
-
 #header-user img{
   border-radius: 30px;
   height: 3rem;
@@ -180,20 +179,21 @@ header button{
   padding-inline: 4.5rem;
 }
 
+/*=== TITULO =================================*/
+
 main .about-work{
   width: 100%;
   display: flex;
-
+  margin-bottom: 1.9rem;
 }
 
 main .about-work h1{
   flex: 7;
+  max-width: 78.3rem;
 
   font-weight: bolder;
   font-size: 2rem;
   line-height: 2.5rem;
-  margin-bottom: 1.9rem;
-
 
   letter-spacing: 0.05em;
 
@@ -212,15 +212,16 @@ main .about-work .links{
 }
 
 main .about-work .links  a, .links button{
-  display: flex;
   border: none;
+  border-radius: .4rem;
   text-decoration: none;
-  color: white;
   font-size: 1.6rem;
+  
+  color: white;
+  background-color: var(--primary-color);
+
   height: 3.1rem;
   padding: 0.6rem 1.2rem;
-  background-color: var(--primary-color);
-  border-radius: .4rem;
 }
 
 main .about-work .links a svg{
@@ -236,6 +237,8 @@ main .about-work .cite h3{
   letter-spacing: 0.05em;
   color: var(--primary-color);
 }
+
+/*=== VIDEO =================================*/
 
 main .video-section{
   display: flex;
@@ -263,17 +266,12 @@ main .video-section .details h2{
   padding: 1.1rem 1.5rem .9rem 1.5rem;
   background: #FDF1EB;
 
-
-  display: flex;
-  align-items: center;
-
   color: #4E4E4E;
 }
 
 main .video-section .details .info{
   padding: 1.5rem;
   font-family: 'Quicksand';
-  font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.7rem;
   letter-spacing: 0.02em;
@@ -295,6 +293,8 @@ main .video-section .details .info ul li{
   font-size: 1.4rem;
 }
 
+/*=== RESUMO =================================*/
+
 main .resume{
   margin-top: 3rem;
   border: 1px solid #ECECEC;
@@ -307,10 +307,6 @@ main .resume h2{
   line-height: 2.5rem;
   padding: 1rem 1.5rem;
   background: #FDF1EB;
-
-
-  display: flex;
-  align-items: center;
 
   color: #4E4E4E;
 }
@@ -335,6 +331,8 @@ main .resume p{
   font-weight: bolder;
 }
 
+/*=== RESUMO =================================*/
+
 main .discussion{
   margin-top: 3rem;
   border: 1px solid #ECECEC;
@@ -348,28 +346,24 @@ main .discussion h2{
   padding: 1rem 1.5rem;
   background: #FDF1EB;
 
-
-  display: flex;
-  align-items: center;
-
   color: #4E4E4E;
 }
 
-main .discussion .create-topic{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*=== TELA CRIAR TÓPICO =================================*/
 
-    margin-bottom: 1.5rem;
+main .discussion .create-topic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-inline: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 main .discussion .create-topic h3{
   margin-top: 1.5rem;
-  font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.1rem;
-  text-align: center;
-  padding-inline: 1.5rem;
   
   color: var(--primary-color);
 }
@@ -385,10 +379,7 @@ main .discussion .create-topic p{
   margin-top: 3.5rem;
   width: 60%;
 
-  text-align: center;
-
   font-family: 'Quicksand';
-  font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.9rem;
 
@@ -428,6 +419,8 @@ main .discussion .create-topic button::before{
   width: 58%;
   background-color: #E7E7E7;
 }
+
+/*=== TELA ENVIAR TOPICO =================================*/
 
 main .discussion .send-topic{
   display: none;
@@ -480,7 +473,6 @@ main .discussion .send-topic #assunto{
   color: #4D4D4D;
 }
 
-
 main .discussion .send-topic .textarea{
   border: 1px solid #CCCCCC;
   border-radius: 3px;
@@ -526,6 +518,8 @@ main .discussion .send-topic .textarea-options #send-topic-btn{
 
   background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
 }
+
+/*=== TELA TÓPICO CRIADO =================================*/
 
 main .discussion .created-topic{
   display: none;
@@ -597,13 +591,14 @@ main .discussion .created-topic button::before{
   background-color: #E7E7E7;
 }
 
+/*=== TÓPICOS =================================*/
+
 .topics{
   padding-inline: 1.5rem;
 }
 
 .topic{
   position: relative;
-
   margin-bottom: 1.7rem;
   min-height: 14.8rem;
   border: 1px solid #E7E7E7;
@@ -612,7 +607,7 @@ main .discussion .created-topic button::before{
   font-family: 'Quicksand';
 }
 
-.topics h3{
+.topic h3{
   margin-top: 1.7rem;
   margin-inline: 2.4rem;
   font-size: 1.6rem;
@@ -621,7 +616,7 @@ main .discussion .created-topic button::before{
   color: var(--primary-color);
 }
 
-.topics h4{
+.topic h4{
   margin-inline: 2.4rem;
   margin-top: .3rem;
 
@@ -631,17 +626,16 @@ main .discussion .created-topic button::before{
   color: #5C5C5C;
 }
 
-.topics p{
+.topic p{
   margin-inline: 2.4rem;
   font-size: 1.4rem;
   line-height: 1.8rem;
   padding-block: 1rem;
 
-
   color: #4D4D4D;
 }
 
-.topics .options{
+.topic .options{
   margin-inline: 2.4rem;
   margin-bottom: 1.7rem;
   display: flex;
@@ -649,7 +643,7 @@ main .discussion .created-topic button::before{
   gap: 1.5rem;
 }
 
-.topics .likes, .respostas{
+.topic .likes, .respostas{
   font-size: 1.4rem;
   line-height: 1.9rem;
 
@@ -661,7 +655,6 @@ main .discussion .created-topic button::before{
 }
 
 .resposta-autor, .resposta-coautor, .resposta-user{
-  position: relative;
   padding-block: 1.7rem 3.5rem;
   background: #F8F8F8;
   border-top: 1px solid #E7E7E7;
@@ -696,7 +689,6 @@ main .discussion .created-topic button::before{
   position: absolute;
   left: 0%;
   right: 0%;
-  z-index: 10;
   height: 100%;
   width: 100%;
   padding-block: 3.5rem;
@@ -728,6 +720,8 @@ main .discussion .created-topic button::before{
   color: var(--primary-color);
 }
 
+/*=== FOOTER =================================*/
+
 footer{
   margin-top: 5rem;
 }
@@ -740,18 +734,19 @@ footer img{
 
 @media screen and (max-width: 800px) {
   :root{--nav-width: 0rem;}
-  header{position: sticky; top:-12rem; z-index: 555;} 
+  header{flex-direction: column; padding: 1.5rem; gap: 1rem; position: sticky; top:-12rem; z-index: 1000000;} 
   header .perfil{width: 100%; display: flex; justify-content: space-between;}
+  header .title, header button{text-align: center; margin: 0;}
+  .container{padding: 1.5rem;}
   main .about-work{flex-direction: column; text-align: center; justify-content: center;}
   main .about-work .cite, .links{text-align: center;}
   main .about-work .cite .links{justify-content: center;}
   main .video-section{flex-direction: column; justify-content: stretch;}
   main .video-section .details, main .video-section img{width: 100%;}
-  header{flex-direction: column; padding: 1.5rem; gap: 1rem;}
-  header .title, header button{text-align: center; margin: 0;}
-  .container{padding: 1.5rem;}
   
-/*===== MENU EXPANDED ======================================*/
+/*=== MENU MOBILE =================================*/
+
+  /*===== MENU EXPANDED ======================================*/
 
   .navside,
   .navside ul li a{
@@ -805,14 +800,16 @@ footer img{
   }
 }
 
-@media screen and (max-width: 690px){
+/*=== HEADER MÓVEL =================================*/
+
+@media (max-width: 690px) and (min-width: 421px){
   header{position: sticky; top: -14.3rem}
 }
 
-@media screen and (max-width: 420px){
+@media (max-width: 420px) and (min-width: 378px){
   header{position: sticky; top: -15.8rem}
 }
 
-@media screen and (max-width: 377px){
+@media (max-width: 377px){
   header{position: sticky; top: -18.3rem}
 }
