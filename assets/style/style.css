@@ -103,11 +103,12 @@ body {
 
 header{
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   background: #FDF1EB;
 
-  padding: .5rem 3,6rem;
+  padding: .5rem 3.6rem;
   width: 100%;
   margin-bottom: 2rem;
 
