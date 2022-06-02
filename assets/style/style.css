@@ -22,6 +22,7 @@ body {
 
   font-family: 'Roboto';
   font-size: 1.6rem;
+
 }
 
 /*=== MENU LATERAL =================================*/
@@ -33,6 +34,7 @@ body {
   left: 0;
   top: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: .3s ease-in;
 }
 
 .navside #event-name{
@@ -61,16 +63,7 @@ body {
 
 .active{
   background-color: #FDF1EB;
-}
-
-.active::before{
-  content: "";
-  position: absolute;
-  transform: translateY(-0.7rem);
-  left: 0;
-  height: 3.3rem;
-  width: 0.5rem;
-  background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+  border-left: 5px solid #ED7839;
 }
 
 .navside nav ul li a{
@@ -138,7 +131,7 @@ header button{
   justify-content: center;
   gap: .5rem;
 
-  width: 9.7rem;
+  min-width: 9.7rem;
   height: 3.4rem;
 
   background: #FDF1EB;
@@ -185,11 +178,13 @@ header button{
 main .about-work{
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  gap: .8rem;
   margin-bottom: 1.9rem;
 }
 
 main .about-work h1{
-  flex: 7;
+  flex: 1;
   max-width: 78.3rem;
 
   font-weight: bolder;
@@ -202,7 +197,7 @@ main .about-work h1{
 }
 
 main .about-work .cite{
-  flex: 2;
+
   text-align: right;
 }
 
@@ -213,6 +208,7 @@ main .about-work .links{
 }
 
 main .about-work .links  a, .links button{
+  cursor: pointer;
   border: none;
   border-radius: .4rem;
   text-decoration: none;
@@ -388,6 +384,7 @@ main .discussion .create-topic p{
 }
 
 main .discussion .create-topic button{
+  cursor: pointer;
   margin-top: 1.4rem;
 
   background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
@@ -499,6 +496,7 @@ main .discussion .send-topic .textarea-options{
 }
 
 main .discussion .send-topic .textarea-options button{
+  cursor: pointer;
   background: none;
   border: none;
 }
@@ -558,6 +556,7 @@ main .discussion .created-topic a{
 }
 
 main .discussion .created-topic button{
+  cursor: pointer;
   margin-inline: auto;
   margin-top: 1.4rem;
 
@@ -647,6 +646,7 @@ main .discussion .created-topic button::before{
 .topic .likes, .respostas{
   font-size: 1.4rem;
   line-height: 1.9rem;
+  cursor: pointer;
 
   color: #757575;
 }
@@ -656,6 +656,7 @@ main .discussion .created-topic button::before{
 }
 
 .resposta-autor, .resposta-coautor, .resposta-user{
+  position: relative;
   padding-block: 1.7rem 3.5rem;
   background: #F8F8F8;
   border-top: 1px solid #E7E7E7;
@@ -735,7 +736,7 @@ footer img{
 
 @media screen and (max-width: 800px) {
   :root{--nav-width: 0rem;}
-  header{flex-direction: column; padding: 1.5rem; gap: 1rem; position: sticky; top:-12rem; z-index: 1000000;} 
+  header{flex-direction: column; padding: 1.5rem; gap: 1rem; position: sticky; top:-12rem; z-index: 10;} 
   header .perfil{width: 100%; display: flex; justify-content: space-between;}
   header .title, header button{text-align: center; margin: 0;}
   .container{padding: 1.5rem;}
@@ -759,7 +760,7 @@ footer img{
   }
 
   body.menu-expanded > :not(.navside) {
-    display: none;
+    opacity: 0;
   }
 
   .close-menu,
@@ -782,6 +783,14 @@ footer img{
     right: 1rem;
   }
 
+  .navside{
+    display: hidden;
+    z-index: 11;
+    width: 0;
+    height: 100vh;
+    background-color: #FFF;
+  }
+
   .navside,
   .close-menu,
   body.menu-expanded .open-menu {
@@ -796,6 +805,8 @@ footer img{
   }
 
   body.menu-expanded .navside {
+    display: block;
+    position: sticky;
     width: 100vw;
     height: 100vh;
   }
