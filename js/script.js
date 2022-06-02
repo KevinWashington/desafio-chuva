@@ -1,3 +1,15 @@
+ScrollReveal().reveal(`
+    .video-section,
+    .details,
+    .resume,
+    .discussion,
+    .topic,
+    .resposta-autor,
+    .resposta-user,
+    .resposta-coautor,
+    footer
+`, { delay:300, reset: true });
+
 let list = document.querySelector('ul')
 let itens = document.querySelectorAll('.menu-option')
 
